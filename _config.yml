@@ -1,0 +1,72 @@
+# Welcome to Jekyll!
+
+# Website settings
+title: Sandeep Dasari
+description: Portfolio and Project Blog
+keywords: sandeep, dasari, blog, jekyll, gh-pages, audio, github, programming, music, technology, machine learning, artificial intelligence, cognitive science, edm, dj
+baseurl:  # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
+url: # url should be 'http://<github_username>.github.io/homepage' as before
+# url: http://127.0.0.1:4000
+img_path: /Jalpc/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
+
+# author -- index page "about me" section
+author:   # change following line to your infomation.
+  name: Sandeep  # Be used at blog posts' author.
+  first_name: Sandeep  # Be used at index page about me section.
+  last_name: Dasari  # Be used at index page about me section.
+  avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
+  github_username: sandcobainer  # Leave blank if you don't have now
+  linkedin_id: sandeepdasari # Leave blank if you don't have now
+  facebook_username: sandcobainer # Leave blank if you don't have now
+  email: sandeepdasari@ksu.edu  # Leave blank if you don't have now
+  cv: http://cv.jarrekk.com  # An online CV can be printed as PDF, leave blank if you don't have now
+  # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
+  skill_icon1:
+    - name: icon-cplusplus
+    - name: icon-python
+  skill_icon2:
+    - name: icon-mongodb
+    - name: icon-javascript-alt
+
+  desc: Data/machine learning engineer, embedded programmer, audio software engineer and musician. 
+  detail: Constantly experimenting innovative solutions to engineer databases/datasets and apply machine learning in media art, medical science, home automation, embedded wearables or any similar interfacable technologies. I like using machine learning and statistics to solve problems for art of medical sciences. Hacking new micro-controllers or sensors on a daily basis is a goal I am trying to fulfill through a professional job.  
+  subtit: Hack anything, build something.  # Describe yourself.
+
+# comment
+disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
+  name: jalpc
+
+# analytics
+## google analytics
+ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
+  id: UA-93473370-3
+
+## google optimize
+go:
+  # id:
+
+## growingIO
+gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
+  # id:
+
+## donation
+donation: on  # type 'on'/'off' to choice display donation button at post page or not
+
+## carousels
+index_carousel: on  # index page carousel switch
+blog_carousel: on  # blog page carousel switch
+
+# scss
+sass:
+  style: compressed
+
+# Build settings
+encoding: utf-8
+
+# other settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+

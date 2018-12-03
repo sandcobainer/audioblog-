@@ -1,0 +1,71 @@
+# careers section data
+# if you don't have language feature(language.yml is empty), ignore "i18n" items
+- name:
+    detail: Kansas State University Global Campus
+    i18n:
+  desc:
+    detail: Developed and updated <a href="https://global.k-state.edu/">KSU Global Campus distance program</a> HTML websites. Worked in writing data collection tools using Javascript, Google Sheets as a database
+    i18n: novomatic_b_desc
+  date:
+    detail: May 2018 - September 2018
+    i18n: novomatic_b_date
+  job:
+    detail: Web Developer Intern
+    i18n: novomatic_b_job
+  icon: fa-plus-square
+
+- name:
+    detail: Kansas State University Holtz Hall
+    i18n: novomatic
+  desc:
+    detail: Tutored students in Statistics and Physics
+    i18n: novomatic_desc
+  date:
+    detail: Jan 2018 - Aug 2018
+    i18n: novomatic_date
+  job:
+    detail: Graduate Tutor
+    i18n: novomatic_job
+  icon: fa-plus-server
+
+- name:
+    detail: Kansas State University
+    i18n: sogema
+  desc:
+    detail: Conducted interdisciplinary research works in Department of Computer Science, Art, Civil Engineering 
+    i18n: sogema_desc
+  date:
+    detail: August 2016 - Jan 2018
+    i18n: sogema_date
+  job:
+    detail: Graduate Research Assitant
+    i18n: sogema_job
+  icon: fa-server
+
+- name:
+    detail: Kansas State University Dept of Architectural Engineering
+    i18n: sogema
+  desc:
+    detail: Setup PostgreSQL database and web technologies for a new research project in Architectural Engineering                             
+    i18n: sogema_desc
+  date:
+    detail: May 2017 - Aug 2017
+    i18n: sogema_date
+  job:
+    detail: Summer Research Intern
+    i18n: sogema_job
+  icon: fa-server
+
+- name:
+    detail: Cognizant Technology Solutions, India
+    i18n: sogema
+  desc:
+    detail: Developed web interfaces for taking tests and quizzes online using C# and JS                                                                                                  
+    i18n: sogema_desc
+  date:
+    detail: August 2015 - July 2016  
+    i18n: sogema_date
+  job:
+    detail: Programmer Analyst Trainee
+    i18n: sogema_job
+  icon: fa-plus-square

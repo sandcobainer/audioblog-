@@ -1,0 +1,32 @@
+# If you don't have language feature(language.yml is empty), ignore "i18n" items
+# Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Gestural Music Interfaces
+  #i18n: kace-sma-tools
+  gh_user: sandcobainer
+  repo: Gestural Music Interfaces
+  url: https://github.com/sandcobainer/gesturalmusicinterfaces
+  img: /static/assets/img/landing/gmi.png
+  desc: Implementing gestural music interfaces using Max/MSP and Leap Motion with Support Vector Machines
+
+- name: Highway Crash Prediction using MongoDB and Machine Learning
+  #i18n: skyflash-github
+  gh_user: dissid
+  url: https://github.com/disssid/trafficked
+  img: /static/assets/img/landing/trafficked.png
+  desc: Performed crash predicition using MongoDB and Logistic Regression. I setup the geospatial database in MonogDB by combining huge SQL datasets from highway police reports, weather to predict severe crash conditions. A visualization of the research is presented as the data is private only to the research group, Knowledge Discovery in Databases at K-state.
+
+- name: Another Arduino Theremin
+  #i18n: k1000-database-queries
+  gh_user: sandcobainer
+  repo: ardutheremi 
+  url: https://github.com/sandcobainer/ardutheremi
+  img: /static/assets/img/landing/ardu.png
+  desc: Theremin implemented on Arduino and Raspberry Pi 3B using ultrasonic range sensors
+
+- name: B-Link , Hack K-State 2016
+  #i18n: morrowind-translation
+  gh_user: sandcobainer
+  repo: B-Link
+  url: https://github.com/sandcobainer/B-Link
+  img: /static/assets/img/landing/blink.png
+  desc: B-Link is a pacman game I desgined with my friend 'dissid' for Hack K-State 2016. The game runs through pygame and used Opencv to detect eye blinks of the gamer. The eye blink triggers a world update within the game, the number of blinks depends on the levels progressed through the game. When the player is cornered, the player can 'blink' to a new world of relatively better positions.
