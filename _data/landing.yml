@@ -8,7 +8,7 @@
 
 - id: career
   i18n: nav.career
-  name: Career
+  name: Experience
   tpl: career.html
   css: timeline
 
@@ -23,6 +23,11 @@
   name: Projects
   tpl: projects.html
   css: project
+
+- id: blog
+  name: Blog
+  tpl: blog.html
+  page: blog/
 
 #- id: links
 #  i18n: nav.link
