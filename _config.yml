@@ -19,7 +19,7 @@ author:   # change following line to your infomation.
   linkedin_id: sandeepdasari # Leave blank if you don't have now
   facebook_username: sandcobainer # Leave blank if you don't have now
   email: sandeepdasari@ksu.edu  # Leave blank if you don't have now
-  cv: http://cv.jarrekk.com  # An online CV can be printed as PDF, leave blank if you don't have now
+  cv: /static/assets/pdf/Fall18SandeepD.pdf  # An online CV can be printed as PDF, leave blank if you don't have now
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
     - name: icon-cplusplus
