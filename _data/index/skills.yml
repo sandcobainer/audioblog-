@@ -2,6 +2,6 @@
 
 label: Skills
 id : cs
-aspects: Python, JavaScript, Java, C++, Max/MSP, MongoDB, mySQL, PostgreSQL, Linux/Shell, macOS, Git, HTML/CSS, Arduino, Embedded electronics
-percentage: 83, 71, 73, 75, 86, 88, 90, 83, 71, 73, 71, 76, 78, 67
+aspects: Python, JavaScript, Java, C++, Max/MSP, MongoDB, MySQL, PostgreSQL, Linux/Shell, macOS, Git, HTML/CSS, Arduino, Embedded electronics
+percentage: 83, 71, 73, 75, 86, 84, 88, 79, 69, 73, 71, 83, 78, 67
 
