@@ -24,14 +24,14 @@ The left hand will control the ampltiude sliders and the right hand will control
 # **Gesture Recognition using Machine Learning**
 The problem of teaching a system to recognize gestures can be solved with multiple approaches. This problem is a classification problem. Depending on the complexity of the problem, the solution can be chosen. If the classification involves simple finger count or a fist/ palm detection, computer vision algorithms that process matrix data (OpenCv, Matlab) are powerful enough to solve the problem. However, we eventually want to classify complex gestures and have the artist map creative gestures for various parameters. For this purpose, Machine Learning is a powerful and efficient tool.
 
-<img src="/static/assets/img/blog/art890/left-gesture.png" alt="left-gesture" class="center">
+<img src="blog3/left-gesture.png" alt="left-gesture" class="center">
 
 This patch is the machine learning model for gesture recognition. I chose the Support Vector machines model for efficient classification using less amount of data. To read more about SVM, click [here](https://medium.com/@LSchultebraucks/introduction-to-support-vector-machines-9f8161ae2fcb). The data is collected in a collection or *coll* object in Max and fed to the *ml.svm* object from the *ml-lib* package. The [*ml-lib*] package is a collection of machine learning algorithms and frameworks within Max/MSP. The patch has a train and a map phase. During the train phase, the SVM model fits the data and during the map phase, the SVM sends out gestures of the left hand out through the outlet.
 
 *The fact that we can add gestures and change the way an instrument behaves adds an artistic choice to the musician.*
 
 ## **Synthesis Patch**
-<img src="/static/assets/img/blog/art890/gesturewavetheremin.jpg" alt="gesturewavetheremin.jpg" class="center" />
+<img src="blog3/gesturewavetheremin.jpg" alt="gesturewavetheremin.jpg" class="center" />
 
 The patch looks complicated but is simple in functioning. Pitch generated from the "pitch-gen" subpatch is visualized as a MIDI note and sent into 4 waveform oscillators. These 4 oscillators will genereate 4 waves and merge the ways to together. The waves generated are modulated with a classic Low Frequency Oscillator. 
 
@@ -42,7 +42,7 @@ The whole synthesized finally passes through a filter module which has 4 commonl
 ## *Presentation Mode*
 Packing the whole design into a simplified presentation mode helps the user to easily interact with the system. I added a few knobs and UI labels to make it interactive and easy for the player to understand the gestures. 
 
-<img src="../static/assets/img/blog/art890/blog3presentation.png" alt="blog3.png" class="center" />
+<img src="blog3/blog3presentation.png" alt="blog3.png" class="center" />
 
 This gesture recognition model gives us a way to interact with the instrument live mapping 7 gestures to 7 sliders in the system. However, there is inaccuracy in recognizing a gesture for 20 - 500ms which causes unexpected changes in sounds. Overall, the patch is an interesting instrument to play and experiment with if synth style audio synthesis and theremin were brought together. *Ideal for movie/background scores?*
 
