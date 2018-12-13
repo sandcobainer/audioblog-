@@ -42,7 +42,7 @@ The whole synthesized finally passes through a filter module which has 4 commonl
 ## *Presentation Mode*
 Packing the whole design into a simplified presentation mode helps the user to easily interact with the system. I added a few knobs and UI labels to make it interactive and easy for the player to understand the gestures. 
 
-<img src="/static/assets/img/blog/art890/blog3presentation.png" alt="blog3.png" class="center" />
+<img src="../static/assets/img/blog/art890/blog3presentation.png" alt="blog3.png" class="center" />
 
 This gesture recognition model gives us a way to interact with the instrument live mapping 7 gestures to 7 sliders in the system. However, there is inaccuracy in recognizing a gesture for 20 - 500ms which causes unexpected changes in sounds. Overall, the patch is an interesting instrument to play and experiment with if synth style audio synthesis and theremin were brought together. *Ideal for movie/background scores?*
 
