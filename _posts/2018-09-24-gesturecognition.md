@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Multi Wave Synthesizer with Gesture Recognition"
-date:   2018-07-24
+date:   2018-09-24
 desc: "Blog 3: This is a blog series chronicling my independent study work at the DX Media Lab, Kansas State University."
 keywords: “kansas state university, leap motion, audio engineering, art, music, music technology, computer science, machine learning, gesture recognition, synthesizer, audio filters, research, independent study"
 categories: [Art890]
