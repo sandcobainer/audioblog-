@@ -48,6 +48,6 @@ By calculating the roll and pitch of the hand, the hand movements can be mapped 
 ## *Presentation Mode*
 The overall instrument is very effective when mapped to a virtual instrument in a DAW. Also the theremin is integrated along with a MIDI keyboard on 2 different channels as show in the image below. The corresponding max patch is listed as **gestural-midi-interface.maxpat** under ***[github:theremingesture/older-v](https://github.com/sandcobainer/gesturalmusicinterfaces/tree/master/theremingesture/older-v)***
 
-<img src="/static/assets/img/blog/art890/blog4presentation.png" alt="blog4.png" class="center" />
+<img src="{{ site.baseurl }}/_posts/blog4/blog4presentation.png" alt="blog4.png" class="center" />
 
 The next post (***Part2***) will cover more about how to visulize these different modes to a visualization and route the MIDI event data into Ableton Live through a virtual 'midiport'.
