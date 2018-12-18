@@ -4,7 +4,7 @@ title:  "Gestural MIDI interface: Part 1"
 date:   2018-10-15
 desc: "Blog 4: This is a blog series chronicling my independent study work at the DX Media Lab, Kansas State University."
 keywords: “kansas state university, leap motion, audio engineering, art, music, music technology, computer science, machine learning, gesture recognition, midi, audio filters, research, independent study, ableton live, mapping"
-categories: [Art890]
+categories: [Art822]
 tags: [leap motion, midi, gesture recognition, max4live, control changes]
 icon: icon-html
 ---

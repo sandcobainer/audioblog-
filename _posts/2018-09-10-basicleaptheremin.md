@@ -4,7 +4,7 @@ title:  "Setup a basic Leap Motion theremin in Max/MSP"
 date:   2018-09-10
 desc: "Blog 2: This is a blog series chronicling my independent study work at the DX Media Lab, Kansas State University."
 keywords: “kansas state university, leap motion, audio engineering, art, music, music technology, computer science, machine learning, media arts, research, independent study"
-categories: [Art890]
+categories: [Art822]
 tags: [leap motion, max/msp, delay theremin]
 icon: icon-html
 ---
