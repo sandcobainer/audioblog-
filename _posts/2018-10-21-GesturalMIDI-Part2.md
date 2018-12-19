@@ -34,7 +34,7 @@ Channel Two allows the user to play notes is a Theremin styled synth device. The
 The possible triads are Major, Minor, Augmented and Diminished. The free gesture plays a simple note. This feature when used with an arpeggiator  is very useful to play flowing transitions in music by simply moving the hand and forming gestures as needed.
 *Given Ableton Live's extensive library of arpeggiators and MIDI effects, this is a very exciting tool to explore complex melodies and sequences*
 
-<img src="{{ site.baseurl }}/static/assets/img/blog/art822/blog5theremin.png" alt="blog5theremin.png" class="center" />
+<img src="{{site.baseurl}}/static/assets/img/blog/art822/blog5theremin.png" alt="blog5theremin.png" class="center" />
 
 # Presentation UI
 
@@ -51,4 +51,4 @@ Both modes have a gesture visualizer, a MIDI note visualizer, a Tremolo Button, 
  addio~
 
 Watch this maxpatch in action:
-[![blog5youtube.jpg](https://img.youtube.com/vi/https://youtu.be/2Yf_n_ua53o/0.jpg)](https://www.youtube.com/watch?v= 2Yf_n_ua53o)
+[![blog5youtube.jpg](https://img.youtube.com/vi/2Yf_n_ua53o/0.jpg)](https://youtu.be/2Yf_n_ua53o)

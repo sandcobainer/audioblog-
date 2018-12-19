@@ -36,6 +36,6 @@ This patch uses the **palmposition** object from the leapmotion external to calc
 
 However the numbers alone do not generate the sound and we will need a sound generator or an oscillator. We will choose a basic sinusoidal oscillator. A simple delay effect (*tapin delay*), an audio meter, a dac~ and spectro graph to observe the waves are added and bundled into a small usable plugin in presentation mode. 
 
-[![Smells Like Teen Spirit Theremin](http://img.youtube.com/vi/ELpzCcuoYn8/0.jpg)](https://www.youtube.com/watch?v=ELpzCcuoYn8 "Smells Like Teen Spirit")
+[![Basic leap theremin](http://img.youtube.com/vi/ELpzCcuoYn8/0.jpg)](https://www.youtube.com/watch?v=ELpzCcuoYn8  "Blog 1 video")
 
 The next post will explore other data from Leap Motion, machine learning, advanced designs and limitations of this approach.
