@@ -47,3 +47,6 @@ Packing the whole design into a simplified presentation mode helps the user to e
 This gesture recognition model gives us a way to interact with the instrument live mapping 7 gestures to 7 sliders in the system. However, there is inaccuracy in recognizing a gesture for 20 - 500ms which causes unexpected changes in sounds. Overall, the patch is an interesting instrument to play and experiment with if synth style audio synthesis and theremin were brought together. *Ideal for movie/background scores?*
 
 The patch "waveformTheremin.maxpat" can be downloaded from my github repo: [**gesturalmusicinterfaces**](https://github.com/sandcobainer/gesturalmusicinterfaces/tree/master/theremingesture/older-v).
+
+Watch this maxpatch in action:
+[![blog3youtube.jpg](https://img.youtube.com/vi/https://youtu.be/k6UgMsqCaS0/0.jpg)](https://www.youtube.com/watch?v=k6UgMsqCaS0)

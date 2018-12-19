@@ -48,4 +48,7 @@ Both modes have a gesture visualizer, a MIDI note visualizer, a Tremolo Button, 
 4. START : start model training (*takes around 20 seconds to train*)
 5. map : map mode to recognize gestures and play!
 
-Will be playing with this till I make some good sounds.  addio~
+ addio~
+
+Watch this maxpatch in action:
+[![blog5youtube.jpg](https://img.youtube.com/vi/https://youtu.be/2Yf_n_ua53o/0.jpg)](https://www.youtube.com/watch?v= 2Yf_n_ua53o)
