@@ -28,13 +28,13 @@ For the MIDI instrument to generate MIDI events, we will need an object like mid
 
 The patch was designed to broadcast MIDI messages on 2 channels. One channel is for attaching a keyboard and using the gestures are used only for the knobs and pitch bends. This channel is activated by pressing the 'keyb' button. There are total of 12 notes and 9 CC's that can be controlled in this mode along with the keyboard notes simultaneously. The keyboard mode lets the user play notes and pitch bend or add tremolo by the movement of the left hand hovering over the Leap Motion sensor.
 
-<img src="{{ site.baseurl }}/static/assets/img/blog/art822/blog5keyb.png" alt="blog5keyboard.png" class="center" />
+<img src="{{ site.baseurl }}/art822/blog5keyb.png" alt="blog5keyboard.png" class="center" />
 
 Channel Two allows the user to play notes is a Theremin styled synth device. The movement of the palm across X-axis plays notes. 5 different gestures are used to play chord shapes.  (*The design is limited to triads currently*)
 The possible triads are Major, Minor, Augmented and Diminished. The free gesture plays a simple note. This feature when used with an arpeggiator  is very useful to play flowing transitions in music by simply moving the hand and forming gestures as needed.
 *Given Ableton Live's extensive library of arpeggiators and MIDI effects, this is a very exciting tool to explore complex melodies and sequences*
 
-<img src="{{site.baseurl}}/static/assets/img/blog/art822/blog5theremin.png" alt="blog5theremin.png" class="center" />
+<img src="{{site.baseurl}}/art822/blog5theremin.png" alt="blog5theremin.png" class="center" />
 
 # Presentation UI
 

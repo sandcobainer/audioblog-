@@ -49,4 +49,4 @@ This gesture recognition model gives us a way to interact with the instrument li
 The patch "waveformTheremin.maxpat" can be downloaded from my github repo: [**gesturalmusicinterfaces**](https://github.com/sandcobainer/gesturalmusicinterfaces/tree/master/theremingesture/older-v).
 
 Watch this maxpatch in action:
-[![blog3youtube.jpg](https://img.youtube.com/vi/https://youtu.be/k6UgMsqCaS0/0.jpg)](https://www.youtube.com/watch?v=k6UgMsqCaS0)
+[![blog3youtube.jpg](https://img.youtube.com/vi/k6UgMsqCaS0/0.jpg)](https://www.youtube.com/watch?v=k6UgMsqCaS0)
