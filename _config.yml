@@ -28,8 +28,8 @@ author:   # change following line to your infomation.
     - name: icon-mongodb
     - name: icon-javascript-alt
 
-  desc: Data science, Machine learning engineer, embedded systems, audio programming, musician. 
-  detail: Constantly experimenting innovative solutions to engineer databases/datasets and apply machine learning in media art, medical science, home automation, embedded wearables or any similar interfacable technologies. I like using machine learning and statistics to solve problems for art or nueroscience. Hacking new micro-controllers or sensors on a daily basis is a goal I am trying to fulfill through a professional job.  
+  desc: Data scientist, Machine learning engineer, audio programmer and musician.
+  detail: I study and apply machine learning into audio engineering, embedded systems and human-computer interaction devices. Often leads me to think about computer interactions to express art and music.
   subtit: Hack anything, build something.  # Describe yourself.
 
 # comment
@@ -68,4 +68,3 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-
