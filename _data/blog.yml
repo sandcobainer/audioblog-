@@ -6,6 +6,8 @@
 - name: Art 822
   href: /art822/
 
+- name: max
+  href: /max/
 
 # Don't display donation page: change donation to off at file '_config.yml'
 #- name: Donate
