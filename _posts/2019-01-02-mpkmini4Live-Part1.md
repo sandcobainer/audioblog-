@@ -3,7 +3,7 @@ layout: post
 title:  "Akai MPK Mini as a Ableton Live controller using M4L"
 date:   2019-01-02
 desc: "Blog 5: This is a blog series chronicling my independent study work at the DX Media Lab, Kansas State University."
-keywords: “kansas state university, akai, audio engineering, art, music, music technology, computer science, mpk mini, midi,"
+keywords: “sampling, ableton, live, max4live, akai, audio engineering, art, music, music technology, computer science, mpk mini, midi,"
 categories: [Max]
 tags: [controlsurface, max4live, akai]
 icon: icon-html
@@ -41,7 +41,7 @@ Initially a sub patch classifies MIDI events into 4 presets or programs setup th
     Encoders: Volume, Panning, Sends, Master Volume, Master Panning
 
 2. Preset2: Device and param control
-    Enocders: Macro Bank control
+    Encoders: Macro Bank control
 
 Preset3 and 4 are left free for MIDI mapping. The track and scenes are accessed through the Live API with Max primarily using the live.object and live.path objects. The LiveAPI Interface is a very useful resource for prototyping and development for Ableton Live. Any parameter within the Ableton Live set can be reached using the Live API. There are smaller properties and get, set methods to affect the parameter.
 
