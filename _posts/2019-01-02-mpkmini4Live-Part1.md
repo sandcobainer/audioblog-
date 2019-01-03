@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Akai MPK Mini as a Ableton Live controller using M4L"
-date:   2018-07-10
+date:   2019-01-02
 desc: "Blog 5: This is a blog series chronicling my independent study work at the DX Media Lab, Kansas State University."
 keywords: “kansas state university, akai, audio engineering, art, music, music technology, computer science, mpk mini, midi,"
 categories: [Max]
