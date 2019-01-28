@@ -36,8 +36,8 @@
   #i18n: morrowind-translation
   gh_user: sandcobainer
   repo: webSamplr
-  url: https://www.youtube.com/watch?v=13c0BHKo6YE&t=14s
-  img:
+  url: https://sandcobainer.github.io/audioblog-/max/2019/01/26/webSamplr.html
+  img: /static/assets/img/blog/blog6-websamplr.png
   desc: webSamplr is a Max4Live device that enables the user to sample any sound source from the internet. It includes track and clip navigation within Ableton Live, as well as a database of popular sampling websites and sources. This sampler was updated to detect sample rate, show waveform in a spectograph and navigate only to copyright free websites.
 
 - name: mpkmini4Live
@@ -45,5 +45,5 @@
   gh_user: sandcobainer
   repo: mpkmini4Live
   url: https://github.com/sandcobainer/mpkmini4Live
-  img:
+  img: /static/assets/img/blog/max/mpkrecordmaxpat.png
   desc: This is a Max4Live MIDI script written using Ableton Live's Max live.api objects to navigate and control almost anything  on the Ableton Live screen. The script was setup for a basic 25$ MIDI keyboard using 2 channels of MIDI stream data. The script efficiently uses all 48 buttons on the board and was setup intuitively for live music looping.
