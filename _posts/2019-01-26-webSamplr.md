@@ -58,5 +58,9 @@ I am hosting this plugin for $0+ on [**Gumroad**](https://gum.co/websamplr). Don
 Most importantly, would support me to write more plugins for artists, producers and movie scorers.
 ***Always cite and pay the rightful copyrights for any sample used in your music. This tool was only written to quickly explore sounds and write music on the fly. Peace.***
 
-Gumroad link:  [***webSamplr***](https://gum.co/websamplr)
+
+## Check the plugin on my gumaroad page. Cheers!
+
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<a class="gumroad-button" href="https://gum.co/websamplr?wanted=true" target="_blank">Get webSamplr now</a>
 

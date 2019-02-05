@@ -17,14 +17,19 @@ The Magenta team came up with a great project at the NIPS-2016, an AI that jams 
 
 The git repo [*magenta-demos*](https://github.com/tensorflow/magenta-demos) has all the projects documented in detail for beginner users. 
 
+<img src="{{ site.baseurl }}/static/assets/img/blog/magenta/magenta-demos.png" alt="Magenta Demos" class="center" />
+
 The most promising demo was hands down [**AI-Jam-Ableton**](https://github.com/tensorflow/magenta-demos/tree/master/ai-jam-ableton). The project integrated a famous DAW that is sturdy and known world-wide. After 2016 the project was opensourced and no real work went into developing it further.
 
-The AI-Ableton-JAM uses a Max patch on an Ipad running MIRA as front end to control  the model. The project also came with a Ableton Live project. However, running this project on Ableton Live 10 and Max 8.0.3 in 2019 turned out to be cumbersome. 
+The AI-Ableton-Jam uses a Max patch on an Ipad running MIRA as front end to control  the model. The project also came with a Ableton Live project. However, running this project on Ableton Live 10 and Max 8.0.3 in 2019 turned out to be cumbersome. 
 
 Ai-jam-js project which is hosted on the google chrome browser using Flask is another promising option. Listed below are the build instructions including Ableton Live routing. 
 
 Specifications: Macbook Pro High Sierra, Ableton Live 10
 ## Set up Conda environment and install requirements
+
+<img src="{{ site.baseurl }}/static/assets/img/blog/magenta/conda-env.png" alt="Conda Environment" class="center" />
+
 Install Anaconda3 from this [*link*](https://www.anaconda.com/distribution/). I installed the Anaconda Navigator for a clear interface. 
 
 1. create a conda environment with Python 2.7
@@ -154,7 +159,16 @@ sh RUN_DEMO.sh
 
 Inside Ableton Live project, setup the IO for each track as follows. Carefully select MIDI From and To sources. 'magenta_out', IAC Driver (IAC Bus 1), IAC Driver (IAC Bus 2) will pop up. I setup my MPK Mini for keyboard and Launchpad for drums. Replace them with your own hardware controllers.
 
+<img src="{{ site.baseurl }}/static/assets/img/blog/magenta/live-track-routing.png" alt="MIDI routing" class="center" />
+
+
+Make sure the virtual midi tracks have 'Track' turned on in Live Preferences. 
+
+<img src="{{ site.baseurl }}/static/assets/img/blog/magenta/midi-track-preferences.png" alt="MIDI Preferences" class="center" />
+
 Open [localhost:4002](http://localhost:4002) in Google Chrome and jam out. If the browser isn't opened, the model will still play with default settings. Mute the website sound and play the audio only through Live track.
+
+<img src="{{ site.baseurl }}/static/assets/img/blog/magenta/demo.png" alt="Final demo" class="center" />
 
 ***Git Issue to be tracked***: The webpage at localhost:4002 JS keys don't work sometimes, especially when the model loads up the second time. You can still play through the MIDI keyboard setup in Live, but the notes played will only be audible, not visible. 
 
