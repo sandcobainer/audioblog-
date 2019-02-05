@@ -1,160 +1,59 @@
 ---
 layout: post
-title:  "Set up Google Magenta Tensorflow's AI-JAM-JS with Ableton Live"
-date:   2019-02-04
-desc: "Blog 7: Setup guide for Magenta Tensorflow ai-jam-js project in Ableton Live"
-keywords: “google magenta, tensorflow, javascript, ableton, live,max, audio engineering, art, music, music technology, computer science, internet, artificial intelligence, machine learning,music production, midi, ai-duet"
+title:  "Akai MPK Mini as a Ableton Live controller using M4L"
+date:   2019-01-02
+desc: "Blog 5: This is a blog series chronicling my independent study work at the DX Media Lab, Kansas State University."
+keywords: “sampling, ableton, live, max4live, akai, audio engineering, art, music, music technology, computer science, mpk mini, midi,"
 categories: [Max]
-tags: [google magenta,tensorflow, ai-jam, ableton live]
+tags: [controlsurface, max4live, akai]
 icon: icon-html
 ---
+Akai MPK Mini (currently MKII) is probably the most basic and beginner controller on market. It has served many producers starting off while making music, who later shifted to an advanced midi controller with more buttons, sliders, knobs etc. I found this Akai MPK Mini on ebay for a cheap 20 USD. This series is me documenting my Max4Live device as a control surface to control Ableton Live. I will be using the Live.API and this amazing M4L device that lets developers debug the live.api "live" within the program.
 
-# **Setting up Google Magenta Tensorflow**
+Thank you, Tyler Mazaika
+**[LiveAPI-Interactive](http://tylermazaika.com/max-for-live/liveapi-interactive/)**
 
-[**Magenta Tensorflow**](https://magenta.tensorflow.org/) is Google's open-source research project to explore the use of machine learning in creative spaces.
+# **Setup AKAI MPK Mini**
 
-The Magenta team came up with a great project at the NIPS-2016, an AI that jams with the user in call and response style. [**Here**](https://experiments.withgoogle.com/ai-duet) is the online model of the project. 
+The MPK Mini initially came with limited presets on the stock pads.  For this control surface , I will be mapping all Ableton Live sessions and devices only on the pads and encoders (knobs). The idea is to keep all the keys and pads free for the user to play music. To edit the existing the MPK Mini presets, you will need an editor that can edit the presets and upload them onto the MPK Mini.
+Download the editor [here](http://www.akaipro.com/products/legacy/mpk-mini).
+The presets are all available on my github repo ["mpkmini4Live"](https://github.com/sandcobainer/mpkmini4Live)
 
-The git repo [*magenta-demos*](https://github.com/tensorflow/magenta-demos) has all the projects documented in detail for beginner users. 
+The USB MIDI controller is connected in the same way as any other MIDI controller. However, the AKAI MPK Mini stock presets will need to be edited using AKAI MPK Mini Editor. (inside MPKWin folder)
 
-The most promising demo was hands down [**AI-Jam-Ableton**](https://github.com/tensorflow/magenta-demos/tree/master/ai-jam-ableton). The project integrated a famous DAW that is sturdy and known world-wide. After 2016 the project was opensourced and no real work went into developing it further.
+![AKAI MPK Mini](http://b8e57dc469f9d8f4cea5-1e3c2cee90259c12021d38ebd8ad6f0f.r79.cf2.rackcdn.com/Content_Images/akai_mpkmini_preset_editor_main.png_6b9a01d599dd9181155b81b91bba06c8.png)
 
-The AI-Ableton-JAM uses a Max patch on an Ipad running MIRA as front end to control  the model. The project also came with a Ableton Live project. However, running this project on Ableton Live 10 and Max 8.0.3 in 2019 turned out to be cumbersome. 
+**MacOS Mojave** users may not be able to run the MPK Mini editor just like me, so I've included the Windows version (.exe file). This run smoothly on Mac OS using wine. run wine MPK\ MINI\ Editor.exe from your Terminal.
 
-Ai-jam-js project which is hosted on the google chrome browser using Flask is another promising option. Listed below are the build instructions including Ableton Live routing. 
+Once the presets are uploaded the hardware controller is ready to go. The M4L device .amxd needs to be placed on a MIDI track with monitoring 'In'selected. This allows us to send MIDI data continuously into Max 4 Live.
 
-Specifications: Macbook Pro High Sierra, Ableton Live 10
-## Set up Conda environment and install requirements
-Install Anaconda3 from this [*link*](https://www.anaconda.com/distribution/). I installed the Anaconda Navigator for a clear interface. 
-
-1. create a conda environment with Python 2.7
-<img src="{{ site.baseurl }}/static/assets/img/blog/routing-flow.png" alt="Routing Flow" class="center" />
-
-2. Open Terminal in this new environment and install magenta. Pip2 for python 2.7 is already installed, so you can directly install Magenta (v0.1.15 or greater) and Flask. This will download and install all dependencies/requirements for this project to run.
-```(py27) bash-3.2$ pip install magenta``` 
-```(py27) bash-3.2$ pip install Flask```
-
-3. Install Node.js with brew
-```(py27) bash-3.2$ brew install node```
-```(py27) bash-3.2$ node -v
-v10.15.1```
-```(py27) bash-3.2$ npm -v
-6.4.1 ```
+On the Max patch, simple notein and ctlin are used to read the messages. All the keys and pad notes from **notein** are left untouched. I used the MIDI messages available only the control  
+messages. The controller has 8 pads and 8 encoders including 2 pad banks. So that makes it *16 pads and 8 encoders* on each preset. The editor lets you upload 4 programs.  Some quick math and you can control ***64 pads and 32 encoders*** on Control Changes, independent of the keyboard and padboard notes. However, the key is to make the presets and pads intuitive so that the user is not lost while playing, looping or producing mixes.
 
 
-## Download and build Magenta ai-jam-js
+# **Programming Max**
 
-Clone the magenta-demos repo with 
+Initially a sub patch classifies MIDI events into 4 presets or programs setup through the Akai editor. The MIDI events are routed into one of 4 preset subpatches where all the magic happens. Patches were designed as follows:
 
-```git clone https://github.com/tensorflow/magenta-demos.git```
+1. Preset1: Track and Scene/Clip control:
+    Pad Bank A: Select, RecordArm, Stop clips, Mute, Solo
+    Pad Bank B: Select Scene/Clip, Fire 3 clips.
+    Encoders: Volume, Panning, Sends, Master Volume, Master Panning
 
-Run the following from the directory of ai-jam-js
+2. Preset2: Device and param control
+    Encoders: Macro Bank control
 
-```
-cd static
-npm install
-node_modules/.bin/webpack
-```
+Preset3 and 4 are left free for MIDI mapping. The track and scenes are accessed through the Live API with Max primarily using the live.object and live.path objects. The LiveAPI Interface is a very useful resource for prototyping and development for Ableton Live. Any parameter within the Ableton Live set can be reached using the Live API. There are smaller properties and get, set methods to affect the parameter.
 
-Modify ai-jam-js/server/server.py to point to port number 4002. Simply replace localhost:8080 with localhost:4002.
+For example, the volume of track 3 can be reached by the path
 
+**path live\_set tracks 3 mixer\_device volume**. The volume slider is changed by using the ***set value $1*** message in Max where $1 is the placeholder for incoming value from the MIDI controller.
+Similar patching applies for buttons and knobs. Track and Clip navigation is done by assigning 4 buttons for left, right, up and down in the clip sessions to select and fire clips.
 
-Modify the RUN\_DEMO.sh to simplify the input-output ports for the magenta model. The new script reads piano input on IAC Driver IAC Bus 1 and drums on IAC Driver IAC Bus 2. (we will create these 2 virtual midi ports in Audio MIDI setup on Mac). Magenta's output will be read on 'magenta_out' in the Ableton Live MIDI track. ***This model eliminates the use of Max completely.***
+I tried to keep the number of API calls to the minimum by reusing track and scene index calls. However, the control changes, especially the circular knobs react slower than a direct MIDI controller through Live.API. The result is a steady gradual movment of knobs in the program.
 
-```
-#!/bin/bash
+## Max Patch
 
-python maybe_download_mags.py
+<img src="{{ site.baseurl }}/static/assets/img/blog/max/mpkrecordmaxpat.png" alt="mpkrecordmaxpat.png" class="center" />
 
-cd server
-python server.py &
-WEB_SERVER=$!
-cd ..
-
-midi_clock\
-  --output_ports="magenta_clock" \
-  --qpm=120 \
-  --channel=0 \
-  --clock_control_number=1 \
-  --log=INFO &
-MIDI_CLOCK=$!
-
-magenta_midi \
-  --input_ports="IAC Driver IAC Bus 2,magenta_clock" \
-  --output_ports="magenta_out" \
-  --bundle_files=./drum_kit_rnn.mag\
-  --qpm=120 \
-  --allow_overlap=true \
-  --playback_channel=9 \
-  --enable_metronome=false \
-  --passthrough=false \
-  --clock_control_number=1 \
-  --min_listen_ticks_control_number=3 \
-  --max_listen_ticks_control_number=4 \
-  --response_ticks_control_number=5 \
-  --temperature_control_number=6 \
-  --generator_select_control_number=8 \
-  --loop_control_number=10 \
-  --panic_control_number=11 \
-  --mutate_control_number=12 \
-  --log=INFO &
-MAGENTA_DRUMS=$!
-
-magenta_midi \
-  --input_ports="IAC Driver IAC Bus 1,magenta_clock" \
-  --output_ports="magenta_out" \
-  --bundle_files=./attention_rnn.mag,./pianoroll_rnn_nade.mag,./performance.mag \
-  --qpm=120 \
-  --allow_overlap=true \
-  --playback_channel=0 \
-  --enable_metronome=false \
-  --passthrough=false \
-  --generator_select_control_number=0 \
-  --clock_control_number=1 \
-  --min_listen_ticks_control_number=3 \
-  --max_listen_ticks_control_number=4 \
-  --response_ticks_control_number=5 \
-  --temperature_control_number=6 \
-  --generator_select_control_number=8 \
-  --loop_control_number=10 \
-  --panic_control_number=11 \
-  --mutate_control_number=12 \
-  --log=INFO &
-MAGENTA_PIANO=$!
-
-trap "kill ${WEB_SERVER} ${MIDI_CLOCK} ${MAGENTA_PIANO} ${MAGENTA_DRUMS}; exit 1" INT
-
-sleep 20
-
-open -a "Google Chrome" "http://localhost:4002"
-
-wait
-
-```
-
-
-## Setup IAC MIDI Drivers (Internal MIDI routing)
-
-Setup internal MIDI routing buses. On Mac, go to Audio MIDI setup -> Window -> Show MIDI studio -> IAC Driver. Make sure your device is online.  You will want to set up two buses (for piano/drum input) with device name "IAC Driver" and bus names:
-
-* IAC Bus 1
-* IAC Bus 2
-
-They will appear in Ableton Live as IAC Driver (IAC Bus 1) and IAC Driver (IAC Bus 2).
-
-
-## Setup Ableton Live
-
-Download and open NIPS\_2016\_Demo.als from [NeurIPS202](https://github.com/tnn1t1s/NeurIPS202). In this template, we shall get rid of the 3 sync tracks under MIDI Routing and the 2 Magenta -> Drums, Keyboard tracks.
-
-Go to /ai-jam-js/ and run the script setup earlier. 
-```
-sh RUN_DEMO.sh
-```
-
-Inside Ableton Live project, setup the IO for each track as follows. Carefully select MIDI From and To sources. 'magenta_out', IAC Driver (IAC Bus 1), IAC Driver (IAC Bus 2) will pop up. I setup my MPK Mini for keyboard and Launchpad for drums. Replace them with your own hardware controllers.
-
-Open [localhost:4002](http://localhost:4002) in Google Chrome and jam out. If the browser isn't opened, the model will still play with default settings. Mute the website sound and play the audio only through Live track.
-
-***Git Issue to be tracked***: The webpage at localhost:4002 JS keys don't work sometimes, especially when the model loads up the second time. You can still play through the MIDI keyboard setup in Live, but the notes played will only be audible, not visible. 
-
+Download patch and presets from my github repo [***mpkmini4Live***](https://github.com/sandcobainer/mpkmini4Live)
