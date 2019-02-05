@@ -32,9 +32,6 @@ Specifications: Macbook Pro High Sierra, Ableton Live 10
 
 Install Anaconda3 from this [*link*](https://www.anaconda.com/distribution/). I installed the Anaconda Navigator for a clear interface. 
 
-* create a conda environment with Python 2.7
-<img src="{{ site.baseurl }}/static/assets/img/blog/routing-flow.png" alt="Routing Flow" class="center" />
-
 * Open Terminal in this new environment and install magenta. Pip2 for python 2.7 is already installed, so you can directly install Magenta (v0.1.15 or greater) and Flask. This will download and install all dependencies/requirements for this project to run.
 
 ```
