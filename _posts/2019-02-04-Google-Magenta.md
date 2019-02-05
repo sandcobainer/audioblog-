@@ -26,34 +26,40 @@ The AI-Ableton-Jam uses a Max patch on an Ipad running MIRA as front end to cont
 Ai-jam-js project which is hosted on the google chrome browser using Flask is another promising option. Listed below are the build instructions including Ableton Live routing. 
 
 Specifications: Macbook Pro High Sierra, Ableton Live 10
-## Set up Conda environment and install requirements
+# Set up Conda environment and install requirements
 
 <img src="{{ site.baseurl }}/static/assets/img/blog/magenta/conda-env.png" alt="Conda Environment" class="center" />
 
 Install Anaconda3 from this [*link*](https://www.anaconda.com/distribution/). I installed the Anaconda Navigator for a clear interface. 
 
-1. create a conda environment with Python 2.7
+* create a conda environment with Python 2.7
 <img src="{{ site.baseurl }}/static/assets/img/blog/routing-flow.png" alt="Routing Flow" class="center" />
 
-2. Open Terminal in this new environment and install magenta. Pip2 for python 2.7 is already installed, so you can directly install Magenta (v0.1.15 or greater) and Flask. This will download and install all dependencies/requirements for this project to run.
-```(py27) bash-3.2$ pip install magenta``` 
-```(py27) bash-3.2$ pip install Flask```
+* Open Terminal in this new environment and install magenta. Pip2 for python 2.7 is already installed, so you can directly install Magenta (v0.1.15 or greater) and Flask. This will download and install all dependencies/requirements for this project to run.
 
-3. Install Node.js with brew
-```(py27) bash-3.2$ brew install node```
-```(py27) bash-3.2$ node -v
-v10.15.1```
-```(py27) bash-3.2$ npm -v
-6.4.1 ```
+```
+pip install magenta
+pip install Flask
+```
+
+* Install Node.js with brew
+
+```
+(py27) bash-3.2$ brew install node
+(py27) bash-3.2$ node -v
+v10.15.1
+(py27) bash-3.2$ npm -v
+6.4.1 
+```
 
 
-## Download and build Magenta ai-jam-js
+# Download and build Magenta ai-jam-js
 
-Clone the magenta-demos repo with 
+* Clone the magenta-demos repo with 
 
 ```git clone https://github.com/tensorflow/magenta-demos.git```
 
-Run the following from the directory of ai-jam-js
+* Run the following from the directory of ai-jam-js
 
 ```
 cd static
@@ -61,10 +67,10 @@ npm install
 node_modules/.bin/webpack
 ```
 
-Modify ai-jam-js/server/server.py to point to port number 4002. Simply replace localhost:8080 with localhost:4002.
+* Modify ai-jam-js/server/server.py to point to port number 4002. Simply replace localhost:8080 with localhost:4002.
 
 
-Modify the RUN\_DEMO.sh to simplify the input-output ports for the magenta model. The new script reads piano input on IAC Driver IAC Bus 1 and drums on IAC Driver IAC Bus 2. (we will create these 2 virtual midi ports in Audio MIDI setup on Mac). Magenta's output will be read on 'magenta_out' in the Ableton Live MIDI track. ***This model eliminates the use of Max completely.***
+* Modify the RUN\_DEMO.sh to simplify the input-output ports for the magenta model. The new script reads piano input on IAC Driver IAC Bus 1 and drums on IAC Driver IAC Bus 2. (we will create these 2 virtual midi ports in Audio MIDI setup on Mac). Magenta's output will be read on 'magenta_out' in the Ableton Live MIDI track. ***This model eliminates the use of Max completely.***
 
 ```
 #!/bin/bash
@@ -138,7 +144,7 @@ wait
 ```
 
 
-## Setup IAC MIDI Drivers (Internal MIDI routing)
+# Setup IAC MIDI Drivers (Internal MIDI routing)
 
 Setup internal MIDI routing buses. On Mac, go to Audio MIDI setup -> Window -> Show MIDI studio -> IAC Driver. Make sure your device is online.  You will want to set up two buses (for piano/drum input) with device name "IAC Driver" and bus names:
 
@@ -148,24 +154,26 @@ Setup internal MIDI routing buses. On Mac, go to Audio MIDI setup -> Window -> S
 They will appear in Ableton Live as IAC Driver (IAC Bus 1) and IAC Driver (IAC Bus 2).
 
 
-## Setup Ableton Live
+# Setup Ableton Live
 
 Download and open NIPS\_2016\_Demo.als from [NeurIPS202](https://github.com/tnn1t1s/NeurIPS202). In this template, we shall get rid of the 3 sync tracks under MIDI Routing and the 2 Magenta -> Drums, Keyboard tracks.
 
-Go to /ai-jam-js/ and run the script setup earlier. 
+* Go to /ai-jam-js/ and run the script setup earlier. 
 ```
 sh RUN_DEMO.sh
 ```
 
-Inside Ableton Live project, setup the IO for each track as follows. Carefully select MIDI From and To sources. 'magenta_out', IAC Driver (IAC Bus 1), IAC Driver (IAC Bus 2) will pop up. I setup my MPK Mini for keyboard and Launchpad for drums. Replace them with your own hardware controllers.
+* Inside Ableton Live project, setup the IO for each track as follows. Carefully select MIDI From and To sources. 'magenta_out', IAC Driver (IAC Bus 1), IAC Driver (IAC Bus 2) will pop up. I setup my MPK Mini for keyboard and Launchpad for drums. Replace them with your own hardware controllers.
 
 <img src="{{ site.baseurl }}/static/assets/img/blog/magenta/live-track-routing.png" alt="MIDI routing" class="center" />
 
 
-Make sure the virtual midi tracks have 'Track' turned on in Live Preferences. 
+* Make sure the virtual midi tracks have 'Track' turned on in Live Preferences. 
 
 <img src="{{ site.baseurl }}/static/assets/img/blog/magenta/midi-track-preferences.png" alt="MIDI Preferences" class="center" />
 
+
+# Demo
 Open [localhost:4002](http://localhost:4002) in Google Chrome and jam out. If the browser isn't opened, the model will still play with default settings. Mute the website sound and play the audio only through Live track.
 
 <img src="{{ site.baseurl }}/static/assets/img/blog/magenta/demo.png" alt="Final demo" class="center" />
