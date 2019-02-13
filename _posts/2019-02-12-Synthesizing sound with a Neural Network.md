@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Magenta NSynth-fastgen"
+title:  "Synthesizing sound with a Neural Network: Magenta NSynth-fastgen"
 date:  2019-02-12
 desc: "Blog 8:Synthesizing sound with a Neural Network"
 keywords: “google magenta, tensorflow, neural network, ai, deep learning, python, google, audio engineering, art, music, music technology, computer science, internet, artificial intelligence, machine learning, music production"
