@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Set up Google Magenta Tensorflow's AI-JAM-JS with Ableton Live"
-date:   2019-02-04
+title:  " Synthesizing sound with a Neural Network: Magenta NSynth-fastgen"
+date:  2019-02-04
 desc: "Blog 7: Setup guide for Magenta Tensorflow ai-jam-js project in Ableton Live"
 keywords: “google magenta, tensorflow, javascript, ableton, live,max, audio engineering, art, music, music technology, computer science, internet, artificial intelligence, machine learning,music production, midi, ai-duet"
 categories: [Max]
@@ -9,7 +9,7 @@ tags: [google magenta,tensorflow, ai-jam, ableton live]
 icon: icon-html
 ---
 
-# **Setting up Google Magenta Tensorflow**
+# **Synthesizing sound with a Neural Network: Magenta NSynth-fastgen**
 
 [**Magenta Tensorflow**](https://magenta.tensorflow.org/) is Google's open-source research project to explore the use of machine learning in creative spaces.
 
