@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Synthesizing sound with a Neural Network: Magenta NSynth-fastgen"
+title:  "Setup Google Magenta's ai-jam-js project"
 date:  2019-02-04
 desc: "Blog 7: Setup guide for Magenta Tensorflow ai-jam-js project in Ableton Live"
 keywords: “google magenta, tensorflow, javascript, ableton, live,max, audio engineering, art, music, music technology, computer science, internet, artificial intelligence, machine learning,music production, midi, ai-duet"
