@@ -15,33 +15,38 @@ This plugin has been my longterm pet project. I didn't have enough knowledge to 
 
 <img src="{{ site.baseurl }}/static/assets/img/blog/blog6-websamplr.png" alt="websamplr. png" class="center" />
 
-The webSamplr is an active real-time sampler that samples anything from the web. It has a built in Chrome Embedded System (CES) browser in terms of Max's jweb object. The browser is supported by a SQL Lite database of sources classified into 5 types: music, samples, radio, video, social media.
+webSamplr is an active real-time sampler that samples anything from the web. It has a built in Chrome Embedded System (CES) browser in terms of Max's jweb object. The browser is supported by a SQL Lite database of sources classified into 5 types: music, samples, radio, video, social media.
+
 Each list populates a sublist with an index and name of the source. Clicking on a source navigates the web browser to that page. The plugin also displays the sample rate of the current sample being streamed and a spectrogram of the audio.
 
-**Future Work**: add buttons to select only copyright free data in the database.
-
 # **How does the sound get sampled?**
-This project was done from scratch on a Macbook High Sierra, for Windows look for audio routing alternatives.
+This project was done from scratch on a Macbook High Sierra. For Windows, look for audio routing alternatives like Jack audio, VB-Audio.
 Max4Live devices can generate sound on a track but how can the generated sound be recorded on the track? 
 Solution: use 3rd party routing software. This is the **ONLY** dependency in this robust M4L device. I explored other options such as recording audio into a buffer and dragging it into Ableton Live, but the process of dragging in audio files didn't seem intuitive and LIVE for my sampling process and playing music on the fly.
 
-# *Audio routing techniques*
+# *Audio routing flow*
 
 The audio is intially generated in the M4L device and routed as follows. To replicate the routing flow in the image
 
 <img src="{{ site.baseurl }}/static/assets/img/blog/routing-flow.png" alt="Routing Flow" class="center" />
 
-1. download Soundflower for Mac, Jack Audio or VB-Audio for Windows and change system 
+- Download Soundflower for Mac, Jack Audio or VB-Audio for Windows and change system 
    audio input device to Internal Microphone
    audio output device to **Soundflower (2ch)**
-2. Setup Ableton Live preferences  
+
+- Setup Ableton Live preferences  
 
 <img src="{{ site.baseurl }}/static/assets/img/blog/audio-preferences.png" alt="Audio Preferences" class="center" />
 
 <img src="{{ site.baseurl }}/static/assets/img/blog/output-devices.png" alt="Output Devices in Live" class="center" />
 
-3. Extract and place the webSamplr.zip in a familiar directory like Max Audio Effects. Make sure the entire folder contents are in the same directory to avoid project dependency errors. (you can place it anywhere on your file system as long as you can access it)
-4. Record arm all audio tracks in Ableton that are setup to record samples. Place the M4L device websamplr.amxd on any **ONE** audio track. webSamplr also accesses all tracks within Ableton Live using live.api. The arrows  in the device or arrow keys on the keyboard are used to navigate between tracks and scenes for specific clips, and Enter on the keyboard launches/records the selected clip in session view.
+- Drag the .amxd M4L device onto ONE AUDIO track in Ableton Live. 
+
+- Record arm all audio tracks in Ableton that are setup to record samples. webSamplr also accesses all tracks within Ableton Live using live.api. 
+
+## Usage
+
+The arrows  in the device or arrow keys on the keyboard are used to navigate between tracks and scenes for specific clips, and Enter on the keyboard launches/records the selected clip in session view.
 
 ## Max Patch
 
@@ -59,7 +64,7 @@ Most importantly, would support me to write more plugins for artists, producers 
 ***Always cite and pay the rightful copyrights for any sample used in your music. This tool was only written to quickly explore sounds and write music on the fly. Peace.***
 
 
-## Check the plugin on my gumaroad page. Cheers!
+## Check the plugin on my gumroad page. Cheers!
 
 <script src="https://gumroad.com/js/gumroad.js"></script>
 <a class="gumroad-button" href="https://gum.co/websamplr?wanted=true" target="_blank">Get webSamplr now</a>
