@@ -14,11 +14,11 @@ author:   # change following line to your infomation.
   name: Sandeep  # Be used at blog posts' author.
   first_name: Sandeep  # Be used at index page about me section.
   last_name: Dasari  # Be used at index page about me section.
-  avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
+  avatar: /static/assets/img/landing/avatar.png  # upload your avatar at directory and edit it.
   github_username: sandcobainer  # Leave blank if you don't have now
   linkedin_id: sandeepdasari # Leave blank if you don't have now
   facebook_username: sandcobainer # Leave blank if you don't have now
-  email: sandeepdasari@ksu.edu  # Leave blank if you don't have now
+  email: sdasari38@gatech.edu  # Leave blank if you don't have now
   cv: https://sandcobainer.github.io/online-cv/ # An online CV can be printed as PDF, leave blank if you don't have now
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
@@ -28,9 +28,10 @@ author:   # change following line to your infomation.
     - name: icon-mongodb
     - name: icon-javascript-alt
 
-  desc: Data scientist, Machine learning engineer, audio programmer and musician.
-  detail: I study and apply machine learning into audio engineering, embedded systems and human-computer interaction devices. Often leads me to think about computer interactions to express art and music.
-  subtit: Hack anything, build something.  # Describe yourself.
+  desc: Music technology researcher, ML engineer, audio programmer and musician (duh).
+  detail: I study music technology and apply computer science into audio, digital signal processing, embedded systems and human-computer interaction devices. 
+  detail:  Audio web and plugin development, VR, Audio spatialization, Data sonofication, visualization, HCI, Interactive Education, Entrepreneurship
+  subtit: Can computers help us express ourselves artistically?  # Describe yourself.
 
 # comment
 #   name: jalpc
