@@ -4,7 +4,7 @@
   #i18n: morrowind-translation
   gh_user: sandcobainer
   repo: ca-music
-  url: https://github.com/sandcobainer/ca-music
+  url: /static/assets/img/landing/camusic.jpg
   # img: 
   desc: New research studies to teach STEM concepts through cellular automata and music online and in museums
 
@@ -13,7 +13,7 @@
   gh_user: sandcobainer
   repo: GrooveMachineWeb
   url: https://github.com/GTCMT/GrooveMachineWeb
-  img: https://github.com/GTCMT/GrooveMachineWeb/blob/master/src/images/Colorful-Tapes.gif
+  img: /static/assets/img/landing/gm.jpg
   desc: Contributor to ongoing project - Web based interface/interactive table to teach kids music and programming. One of the projects of Express Machinery Lab, Music Technology/Digital Media, Georgia Tech.
 
 - name: Interpolating Drum sampler
@@ -21,7 +21,7 @@
   gh_user: sandcobainer
   repo: InterpolatingDrum
   url: https://github.com/sandcobainer/Interpolating-Drum
-  # img: 
+  img: /static/assets/img/landing/interpolating-drum.jpg
   desc: Contributor to ongoing project - Web based interface/interactive table to teach kids music and programming. One of the projects of Express Machinery Lab, Music Technology/Digital Media, Georgia Tech.
 
 
