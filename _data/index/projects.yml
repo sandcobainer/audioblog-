@@ -14,7 +14,7 @@
   repo: GrooveMachineWeb
   url: https://github.com/GTCMT/GrooveMachineWeb
   img: /static/assets/img/landing/gm.jpg
-  desc: Contributor to ongoing project - Web based interface/interactive table to teach kids music and programming. One of the projects of Express Machinery Lab, Music Technology/Digital Media, Georgia Tech.
+  desc: Contributor to ongoing project - Web based interface/interactive table to teach kids music and programming. Express Machinery Lab, Music Technology/Digital Media, Georgia Tech.
 
 - name: Interpolating Drum sampler
   #i18n: morrowind-translation
@@ -65,4 +65,4 @@
   repo: mpkmini4Live
   url: https://github.com/sandcobainer/mpkmini4Live
   img: /static/assets/img/blog/max/mpkrecordmaxpat.png
-  desc: This is a Max4Live MIDI script written using Ableton Live's Max live.api objects to navigate and control almost anything  on the Ableton Live screen. The script was setup for a basic 25$ MIDI keyboard using 2 channels of MIDI stream data. The script efficiently uses all 48 buttons on the board and was setup intuitively for live music looping.
+  desc: This is a Max4Live MIDI script written using Ableton Live's Max live.api objects to navigate and control almost anything  on the Ableton Live screen.
