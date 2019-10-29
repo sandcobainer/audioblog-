@@ -4,8 +4,8 @@
   #i18n: morrowind-translation
   gh_user: sandcobainer
   repo: ca-music
-  url: /static/assets/img/landing/camusic.jpg
-  # img: 
+  img: /static/assets/img/landing/camusic.jpg
+  url: https://github.com/sandcobainer/ca-music 
   desc: New research studies to teach STEM concepts through cellular automata and music online and in museums
 
 - name: GrooveMachine
