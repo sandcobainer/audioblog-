@@ -1,6 +1,8 @@
 # Welcome to Jekyll!
 
 # Website settings
+plugins:
+  - jekyll-feed
 title: Sandeep Dasari
 description: Portfolio and Project Blog
 keywords: sandeep, dasari, blog, jekyll, gh-pages, audio, github, programming, music, technology, machine learning, artificial intelligence, cognitive science, edm, dj
