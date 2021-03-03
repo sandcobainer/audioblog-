@@ -71,21 +71,7 @@
   icon: fa-plus-square
 
 - name:
-    detail: Kansas State University Holtz Hall
-    i18n: novomatic
-  desc:
-    detail: Tutored students in Statistics and Physics
-    i18n: novomatic_desc
-  date:
-    detail: Jan 2018 - Aug 2018
-    i18n: novomatic_date
-  job:
-    detail: Graduate Tutor
-    i18n: novomatic_job
-  icon: fa-plus-server
-
-- name:
-    detail: Kansas State University
+    detail: Kansas State University Dept of Computer Science/Art
     i18n: sogema
   desc:
     detail: Conducted interdisciplinary research works in Department of Computer Science, Art, Civil Engineering 
