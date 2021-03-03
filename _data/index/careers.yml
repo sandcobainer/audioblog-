@@ -4,10 +4,38 @@
     detail: Georgia Institute of Technology
     i18n: sogema
   desc:
-    detail: Interdisciplinary Graduate Researcher in music and STEM educational interfaces
+    detail: Web development and design for campus website using WordPress, Drupal, PHP and JavaScript
     i18n: sogema_desc
   date:
-    detail: August 2019 - current
+    detail: Jan 2021 - current
+    i18n: sogema_date
+  job:
+    detail: Web Developer
+    i18n: sogema_job
+  icon: fa-server
+
+- name:
+    detail: Qualcomm Inc.
+    i18n: sogema
+  desc:
+    detail: Developed cross-platform audio application using Node, Electron and VueJS. Application batch encodes/decodes audio watermarks in directories of audio files
+    i18n: sogema_desc
+  date:
+    detail: May 2020 - Aug 2020
+    i18n: sogema_date
+  job:
+    detail: Engineering Intern
+    i18n: sogema_job
+  icon: fa-server
+
+- name:
+    detail: Georgia Institute of Technology
+    i18n: sogema
+  desc:
+    detail: Interdisciplinary Graduate Researcher in music, software development and  HCI.
+    i18n: sogema_desc
+  date:
+    detail: August 2019 - May 2020
     i18n: sogema_date
   job:
     detail: Graduate Research Assistant

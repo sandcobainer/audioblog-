@@ -1,12 +1,20 @@
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: CA Music
+- name: Lexcast-Pipeline
   #i18n: morrowind-translation
   gh_user: sandcobainer
-  repo: ca-music
-  img: /static/assets/img/landing/camusic.jpg
-  url: https://github.com/sandcobainer/ca-music 
-  desc: New research studies to teach STEM concepts through cellular automata and music online and in museums
+  repo: lexcast-pipeline
+  img: 
+  url: https://github.com/sandcobainer/lexcast-pipeline 
+  desc: This is an ETL data pipeline combining data API to get youtube playlists, transcripts and perform Named Entity Recognition using NLP library Spacy.
+
+- name: evomusic
+  #i18n: morrowind-translation
+  gh_user: sandcobainer
+  repo: evomusic
+  img: 
+  url: https://github.com/sandcobainer/evomusic
+  desc: Genetic Algorithm interface for FoxDot in Atom. The tool allows live coding music to co-create music during a live performance with a genetic algorithm.
 
 - name: GrooveMachine
   #i18n: morrowind-translation
@@ -22,7 +30,7 @@
   repo: InterpolatingDrum
   url: https://github.com/sandcobainer/Interpolating-Drum
   img: /static/assets/img/landing/interpolating-drum.jpg
-  desc: Contributor to ongoing project - Web based interface/interactive table to teach kids music and programming. One of the projects of Express Machinery Lab, Music Technology/Digital Media, Georgia Tech.
+  desc: Music Information Retrieval -  Cluster similar audio samples using unsupervised learning on audio features
 
 
 - name: webSamplr
@@ -56,13 +64,3 @@
   url: https://github.com/sandcobainer/B-Link
   img: /static/assets/img/landing/blink.png
   desc: B-Link is a pacman game I desgined with my friend 'dissid' for Hack K-State 2016. Gamer eye blink triggers a world update within the game to create a "secret" way of interaction that the gamer has to learn.
-
-
-
-- name: mpkmini4Live
-  #i18n: morrowind-translation
-  gh_user: sandcobainer
-  repo: mpkmini4Live
-  url: https://github.com/sandcobainer/mpkmini4Live
-  img: /static/assets/img/blog/max/mpkrecordmaxpat.png
-  desc: This is a Max4Live MIDI script written using Ableton Live's Max live.api objects to navigate and control almost anything  on the Ableton Live screen.
