@@ -26,7 +26,7 @@
 
 - id: blog
   name: Blog
-  tpl: blog.html
+  tpl: https://sandcobainer.substack.com
   page: https://sandcobainer.substack.com
 
 #- id: links
